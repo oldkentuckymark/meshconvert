@@ -39,6 +39,6 @@ with open(output_path, mode='w', newline='') as csvfile:
                 color = color_layer.data[loop_index].color
                 r, g, b, a = color
 
-            writer.writerow([co.x, co.y, co.z, r, g, b, a])
+            writer.writerow([co.x, co.z, co.y, r, g, b, a])
 
 print(f"Exported {obj.name} vertices to {output_path}")
